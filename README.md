@@ -13,17 +13,19 @@
 ## NeoVim Config With Copilot
 
 > **Note** : This requires thre following:
-- Neovim
-- Node 12+
+- Neovim `brew install neovim`
+- Node 12+ `brew install node`
 
 
 #### Initial Setup
 
 ```bash
-git clone https://github.com/ahmedsaheed/neovim.git ~/.config/nvim && nvim
+git clone --filter=blob:none --sparse  https://github.com/ahmedsaheed/dotfiles.git ~/.config/nvim
+&& cd ~/.config/nvim && git sparse-checkout add nvim && nvim                                                               
+
 ```
 
-> Note, Here there'd be an error, you'd need to run `:PackerSync` to install plugins. 
+> **Note**, Here there'd be an error, you'd need to run `:PackerSync` to install plugins. 
 
 #### Setup Copilot (Optional):
 
@@ -52,7 +54,7 @@ git clone https://github.com/github/copilot.vim.git \
 - Lua-Line
 
 
-<details><summary> Keybinds</summary>
+<details><summary>Keybinds</summary>
 
 
 > Leader key is <kbd>,</kbd> (ascii comma)
@@ -90,7 +92,8 @@ git clone https://github.com/github/copilot.vim.git \
 - [Exa](https://the.exa.website/) - `ls` replacement
 - [Starship](https://starship.rs/) - customizable prompt for any shell
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Nerd Font
-- [jump](https://github.com/gsamokovarov/jump) - Navigate faster on your shell
+- [Jump](https://github.com/gsamokovarov/jump) - Navigate faster on your shell
+
 
 
 
