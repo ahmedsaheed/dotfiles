@@ -1,0 +1,39 @@
+local map = vim.api.nvim_set_keymap
+
+
+map('i', 'jk', '<Esc>', { noremap = true })
+
+vim.g.mapleader = ','
+map('n', '<Leader>w', ':w<CR>', { noremap = true })
+map('n', '<Leader>q', ':delmarks! | q<CR>', { noremap = true })
+--map vsplit to <Leader>v
+map('n', '<Leader>`', ':vsplit<CR>', { noremap = true })
+map ('n', '<Leader>y', ':%y<CR>', { noremap = true })
+
+-- Lua tree
+map('n', '<Leader>m', ':NvimTreeToggle<CR>', { noremap = true })
+
+-- Telescope
+map('n', '<Leader>F', ':Telescope live_grep<CR>', { noremap = true })
+map('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true })
+
+
+-- Hop
+map('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false })<cr>", {})
+map('n', 'F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = false })<cr>", {})
+
+-- coc
+local function t(str)
+    return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
+
+function _G.smart_tab()
+    return vim.fn.pumvisible() == 1 and t'<C-n>' or t'<Tab>'
+end
+
+map('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
+
+--Trouble for debug  
+map('n', '<Leader>r', ':Trouble<CR>', { noremap = true })
+-- setup key mappping for vim.lsp.buf.hover
+map('n','<leader>l','<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true })
