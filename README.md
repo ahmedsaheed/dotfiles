@@ -1,4 +1,4 @@
-![Screenshot 2022-10-06 at 22 51 11](https://user-images.githubusercontent.com/87912847/194425216-6b6238e3-a7d3-4ada-8afd-41c802bd988e.png)
+![Screenshot 2022-10-07 at 19 23 07](https://user-images.githubusercontent.com/87912847/194624456-6f3b7a97-d2b5-4459-bc93-30c5c7791ede.png)
 ![Screenshot 2022-10-06 at 22 53 19](https://user-images.githubusercontent.com/87912847/194425520-5b8cb50e-b212-45bc-afb8-5c4b9913adfc.png)
 
 # My Dotfiles
