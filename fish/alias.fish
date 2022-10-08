@@ -1,6 +1,7 @@
 alias vim=nvim
 alias cat=bat
 alias reload='exec fish'
+alias cheat "cht.sh -i"
 alias weather "curl https://v2.wttr.in/u"
 alias ip "curl ifconfig.me"
 alias fishProfile="nvim ~/.config/fish/config.fish"
