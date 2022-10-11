@@ -13,9 +13,6 @@
 
 ## NeoVim Config With Copilot
 
-![Screenshot 2022-10-07 at 21 33 18](https://user-images.githubusercontent.com/87912847/194648251-28561e34-0c67-4cf7-a086-8a72644799af.png)
-
-
 > **Note** : This requires thre following:
 - Neovim `brew install neovim`
 - Node 12+ `brew install node`
