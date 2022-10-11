@@ -32,6 +32,11 @@ return require('packer').startup(function()
         requires = 'nvim-lua/plenary.nvim',
     }
 
+     use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
+
     use { "williamboman/mason.nvim" }
     use {
         'lewis6991/gitsigns.nvim',

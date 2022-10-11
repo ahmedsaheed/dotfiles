@@ -21,6 +21,8 @@ local plugins_modules = {
     "plugins.configs.lsp-configs",
     "plugins.configs.mason",
     "plugins.configs.java",
+    "plugins.configs.neosolarize",
+    "plugins.configs.tokyonight",
 }
 
 local colors_modules = {

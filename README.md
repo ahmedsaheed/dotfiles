@@ -1,13 +1,14 @@
-![Screenshot 2022-10-07 at 19 23 07](https://user-images.githubusercontent.com/87912847/194624456-6f3b7a97-d2b5-4459-bc93-30c5c7791ede.png)
-![Screenshot 2022-10-06 at 22 53 19](https://user-images.githubusercontent.com/87912847/194425520-5b8cb50e-b212-45bc-afb8-5c4b9913adfc.png)
+![Screenshot 2022-10-11 at 22 09 49](https://user-images.githubusercontent.com/87912847/195198934-105a8747-82de-4744-bbb6-4e5be25d823b.png)
+![Screenshot 2022-10-11 at 22 12 52](https://user-images.githubusercontent.com/87912847/195199436-8881a045-e083-4b90-bbd8-c445ddb1e5a1.png)
 
 # My Dotfiles
+
 > **Warning** : These configurations are personal. When you choose to use it, do so at your own peril.
 
 # Contents
 - Neovim config
 - Fish config
-- Git config
+- Tmux config
 
 
 ## NeoVim Config With Copilot
@@ -105,4 +106,5 @@ git clone https://github.com/github/copilot.vim.git \
 
 - [Tmux](https://github.com/tmux/tmux/wiki)
 - [gpakosz configuration](https://github.com/gpakosz/.tmux)
+
 
