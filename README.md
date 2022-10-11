@@ -101,4 +101,8 @@ git clone https://github.com/github/copilot.vim.git \
 
 
 
+## Tmux Config
+
+- [Tmux](https://github.com/tmux/tmux/wiki)
+- [gpakosz configuration](https://github.com/gpakosz/.tmux)
 
