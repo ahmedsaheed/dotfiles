@@ -23,6 +23,7 @@ return require('packer').startup(function()
     use 'MunifTanjim/prettier.nvim'
     use 'nacro90/numb.nvim'
     use 'mfussenegger/nvim-jdtls'
+    use 'glepnir/lspsaga.nvim' -- LSP UIs
     -- Themes
 use { "catppuccin/nvim", as = "catppuccin" }
     use 'navarasu/onedark.nvim'
@@ -47,9 +48,6 @@ use { "catppuccin/nvim", as = "catppuccin" }
             init = function()
                 -- Require providers
                 require('hover.providers.lsp')
-                -- require('hover.providers.gh')
-                -- require('hover.providers.man')
-                -- require('hover.providers.dictionary')
               end,
               preview_opts = {
                 border = nil

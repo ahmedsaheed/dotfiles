@@ -23,6 +23,7 @@ return require('packer').startup(function()
     use 'MunifTanjim/prettier.nvim'
     use 'nacro90/numb.nvim'
     use 'mfussenegger/nvim-jdtls'
+    use 'glepnir/lspsaga.nvim' -- LSP UIs
     -- Themes
     use 'folke/tokyonight.nvim'
     use 'navarasu/onedark.nvim'

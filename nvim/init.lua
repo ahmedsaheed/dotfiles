@@ -23,6 +23,7 @@ local plugins_modules = {
     "plugins.configs.java",
     "plugins.configs.neosolarize",
     "plugins.configs.tokyonight",
+    "plugins.configs.lspsaga",
 }
 
 local colors_modules = {

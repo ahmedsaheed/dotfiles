@@ -13,9 +13,6 @@ map('n', '<Leader>m', ':NvimTreeToggle<CR>', { noremap = true })
 map('n', '<Leader>F', ':Telescope live_grep<CR>', { noremap = true })
 map('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true })
 
--- Code Runner
--- map('n', '<leader>r', ':RunFile<CR>', { noremap = true, silent = false })
-
 -- Hop
 map('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false })<cr>", {})
 map('n', 'F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = false })<cr>", {})
@@ -34,8 +31,3 @@ map('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 --trouble
 map('n', '<Leader>r', ':Trouble<CR>', { noremap = true })
 
---Hover
--- map('n','<leader>af','<cmd>lua vim.lsp.buf.code_action()<CR>', { noremap = true })
---
--- setup key mappping for vim.lsp.buf.hover
-map('n','<leader>l','<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true })

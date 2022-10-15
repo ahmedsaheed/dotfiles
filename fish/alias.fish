@@ -11,6 +11,6 @@ alias desktop "cd $home && cd Desktop/Desktop"
 alias commander "cd $home && cd GolandProjects/commander/ && go run ."
 alias ls "exa --long --header"
 alias tdie "tmux kill-server"
-alias unx "/usr/local/bin/uxn\ 2/uxnemu ; exit; "
+alias unx "cd $home && /usr/local/bin/uxn\ 2/uxnemu ; exit; "
 # create alias for clearing terminal which set TERM to xterm
 #alias clear="TERM xterm; clear;"

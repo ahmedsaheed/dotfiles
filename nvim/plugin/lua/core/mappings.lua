@@ -35,5 +35,3 @@ map('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 
 --Trouble for debug  
 map('n', '<Leader>r', ':Trouble<CR>', { noremap = true })
--- setup key mappping for vim.lsp.buf.hover
-map('n','<leader>l','<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true })
