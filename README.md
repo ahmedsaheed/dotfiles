@@ -5,6 +5,14 @@
 
 > **Warning** : These configurations are personal. When you choose to use it, do so at your own peril.
 
+
+## Install All
+```shell
+brew install neovim fish tmux &&
+git clone https://github.com/ahmedsaheed/dotfiles.git ~/.config
+
+```
+
 # Contents
 - Neovim config
 - Fish config
