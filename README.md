@@ -1,6 +1,5 @@
+![Screenshot 2022-11-04 at 19 05 32](https://user-images.githubusercontent.com/87912847/200055570-b18c4e70-ee61-400e-9339-e28422d8e84a.png)
 ![Screenshot 2022-10-11 at 22 09 49](https://user-images.githubusercontent.com/87912847/195198934-105a8747-82de-4744-bbb6-4e5be25d823b.png)
-![Screenshot 2022-10-11 at 22 12 52](https://user-images.githubusercontent.com/87912847/195199436-8881a045-e083-4b90-bbd8-c445ddb1e5a1.png)
-
 # My Dotfiles
 
 > **Warning** : These configurations are personal. When you choose to use it, do so at your own peril.
