@@ -112,3 +112,6 @@ git clone https://github.com/github/copilot.vim.git \
 - [gpakosz configuration](https://github.com/gpakosz/.tmux)
 
 
+## Font 
+
+- [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts)

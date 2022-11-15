@@ -14,3 +14,4 @@ alias tdie "tmux kill-server"
 alias unx "cd $home && /usr/local/bin/uxn\ 2/uxnemu ; exit; "
 # create alias for clearing terminal which set TERM to xterm
 #alias clear="TERM xterm; clear;"
+
