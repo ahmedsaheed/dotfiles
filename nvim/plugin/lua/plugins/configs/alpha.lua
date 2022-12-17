@@ -1,6 +1,9 @@
 local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
-
+local math = require("math")
+local array = {"hello", "world", "foo", "bar"} -- TODO: Get nice quotes later
+local index = math.random(#array)
+local randomElement = array[index]
 
 -- Set header
 -- dashboard.section.header.val = {
@@ -38,6 +41,7 @@ dashboard.section.buttons.val = {
 }
 
 local fortune = require("alpha.fortune")
+-- dashboard.section.footer.val = randomElement
 dashboard.section.footer.val = fortune()
 
 -- Send config to alpha
