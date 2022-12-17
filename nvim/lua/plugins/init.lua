@@ -26,9 +26,7 @@ return require('packer').startup(function()
     use 'glepnir/lspsaga.nvim' -- LSP UIs
     -- Themes
 use { "catppuccin/nvim", as = "catppuccin" }
-    use 'navarasu/onedark.nvim'
-    use 'folke/tokyonight.nvim'
-
+use {'nyoom-engineering/oxocarbon.nvim'}
 
     use {
         'CRAG666/code_runner.nvim',
@@ -43,6 +41,16 @@ use { "catppuccin/nvim", as = "catppuccin" }
         end
       }
 
+    use {
+    "folke/zen-mode.nvim",
+    config = function()
+    require("zen-mode").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+     }
+        end
+    }
       use{"lewis6991/hover.nvim", config = function()
         require('hover').setup{
             init = function()

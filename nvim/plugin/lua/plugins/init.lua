@@ -12,7 +12,6 @@ return require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'
     use 'tpope/vim-commentary'
     use 'terryma/vim-multiple-cursors'
-    use 'mrjones2014/smart-splits.nvim'
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
     use 'kshenoy/vim-signature'
@@ -25,14 +24,23 @@ return require('packer').startup(function()
     use 'mfussenegger/nvim-jdtls'
     use 'glepnir/lspsaga.nvim' -- LSP UIs
     -- Themes
-    use 'folke/tokyonight.nvim'
-    use 'navarasu/onedark.nvim'
+    use {'nyoom-engineering/oxocarbon.nvim'}
     use { "catppuccin/nvim", as = "catppuccin" }
     use {
         'CRAG666/code_runner.nvim',
         requires = 'nvim-lua/plenary.nvim',
     }
 
+    use {
+    "folke/zen-mode.nvim",
+    config = function()
+    require("zen-mode").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+     }
+        end
+    }
      use {
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
@@ -58,9 +66,6 @@ return require('packer').startup(function()
             init = function()
                 -- Require providers
                 require('hover.providers.lsp')
-                -- require('hover.providers.gh')
-                -- require('hover.providers.man')
-                -- require('hover.providers.dictionary')
               end,
               preview_opts = {
                 border = nil

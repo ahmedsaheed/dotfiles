@@ -33,3 +33,7 @@ local colors_modules = {
 load_modules(core_modules)
 load_modules(plugins_modules)
 load_modules(colors_modules)
+
+
+-- disable swap file
+vim.o.swapfile = false
