@@ -1,5 +1,6 @@
-![Screenshot 2022-11-04 at 19 05 32](https://user-images.githubusercontent.com/87912847/200055570-b18c4e70-ee61-400e-9339-e28422d8e84a.png)
-![Screenshot 2022-10-11 at 22 09 49](https://user-images.githubusercontent.com/87912847/195198934-105a8747-82de-4744-bbb6-4e5be25d823b.png)
+![ss](https://user-images.githubusercontent.com/87912847/209464154-62681ed4-41c3-4a44-80e7-fda7a5a64a66.jpeg)
+![r](https://user-images.githubusercontent.com/87912847/209464360-696347d9-fe9a-4701-bbd1-b360051343eb.jpeg)
+
 # My Dotfiles
 
 > **Warning** : These configurations are personal. When you choose to use it, do so at your own peril.
@@ -115,3 +116,4 @@ git clone https://github.com/github/copilot.vim.git \
 ## Font 
 
 - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts)
+
