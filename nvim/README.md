@@ -1,11 +1,11 @@
 ## Neovim Config Man Page
 
-This file contains helps and usage instructions for the accompanied nvim directory. 
+This file contains helps and usage instructions for the accompanied nvim directory.
 
 ### Some heads up
 
 If you've successfully cloned this nvim configuration into your `~/.config`
-you can easily get it runinng by typing `nvim` into the terminal. 
+you can easily get it runinng by typing `nvim` into the terminal.
 Note, if this is the first installation, you'd need to run `:PackerSync` to install required packages
 
 ### Plugins
@@ -29,7 +29,7 @@ Plugin Manager is [packer](https://github.com/wbthomason/packer.nvim)
 | [Github Copilot](https://github.com/github/copilot.vim)            | Neovim plugin for GitHub Copilot   |
 | [Trouble](https://github.com/folke/trouble.nvim)                   | A pretty diagnostics               |
 
-[See more here](https://github.com/ahmedsaheed/dotfiles/tree/master/nvim/plugin/lua/plugins/configs) 
+[See more here](https://github.com/ahmedsaheed/dotfiles/tree/master/nvim/plugin/lua/plugins/configs)
 
 ### Key Binds
 
@@ -49,10 +49,10 @@ Plugin Manager is [packer](https://github.com/wbthomason/packer.nvim)
 | `Leader` + `gr` | Rename Variable or function   |
 | `Leader` + `t`  | Toggle Terminal               |
 
+### AUTHOR
 
-### AUTHOR
 - Ahmed Saheed
 
+### COPYRIGHT
 
-### COPYRIGHT
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
