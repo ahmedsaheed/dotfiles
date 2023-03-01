@@ -14,7 +14,7 @@ alias javaPrettier 'prettier --write "**/*.java"'
 alias python "python3"
 alias init beginday
 alias okta openOkta
-
+alias nvim-man displayNvimManPage 
 
 function beginday
     open -a "slack"
@@ -24,4 +24,17 @@ end
 
 function openOkta
     open -a "Google Chrome" https://toasttab.okta.com  --args --profile-directory="Profile 3" 
+end
+
+
+function displayNvimManPage
+    if type -q glow
+        glow ~/.config/nvim/readme.md
+    else
+        if test $fish_platform = "msys"
+            type ~/.config/nvim/readme.md
+        else
+            cat ~/.config/nvim/readme.md
+        end
+    end 
 end
