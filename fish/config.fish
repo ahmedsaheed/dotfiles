@@ -1,6 +1,5 @@
 set -gx PATH /usr/local/bin $PATH
-# ~/.config/fish/config.fish
 source ~/.config/fish/alias.fish
-# starship init fish | source
-# jump shell fish | source
-
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx VCPKG_ROOT "$HOME/vcpkg"

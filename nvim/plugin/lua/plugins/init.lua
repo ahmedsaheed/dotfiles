@@ -28,7 +28,13 @@ return packer.startup(function()
     use 'MunifTanjim/prettier.nvim'
     use 'nacro90/numb.nvim'
     use 'mfussenegger/nvim-jdtls'
-    use 'glepnir/lspsaga.nvim' -- LSP UIs
+    use ({
+    'nvimdev/lspsaga.nvim',
+     after = 'nvim-lspconfig',
+    config = function()
+        require('lspsaga').setup({})
+    end,
+})
     -- Themes
     use {'nyoom-engineering/oxocarbon.nvim'}
     use { "catppuccin/nvim", as = "catppuccin" }
