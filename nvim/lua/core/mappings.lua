@@ -17,6 +17,17 @@ map('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true })
 map('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false })<cr>", {})
 map('n', 'F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = false })<cr>", {})
 
+
+-- LSP
+
+map('n', '<Leader>l', ':Lspsaga hover_doc<CR>', { noremap = true })
+map('n', '<Leader>ca', ':Lspsaga code_action<CR>', { noremap = true })
+map('n', '<Leader>o', ':Lspsaga outline<CR>', { noremap = true })
+map('n', '<Leader>l', ':Lspsaga hover_doc<CR>', { noremap = true })
+map('n', '<Leader>gd', ':Lspsaga goto_definition<CR>', { noremap = true })
+map('n', '<Leader>gr', ':Lspsaga rename<CR>', { noremap = true })
+map('n', '<Leader>gh', ':Lspsaga finder<CR>', { noremap = true })
+
 -- coc
 local function t(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)

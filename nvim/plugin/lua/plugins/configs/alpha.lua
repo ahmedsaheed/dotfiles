@@ -1,9 +1,5 @@
 local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
-local math = require("math")
-local array = {"hello", "world", "foo", "bar"} -- TODO: Get nice quotes later
-local index = math.random(#array)
-local randomElement = array[index]
 
 
  dashboard.section.header.val = {
@@ -19,14 +15,13 @@ local randomElement = array[index]
 -- Set menu
 dashboard.section.buttons.val = {
     dashboard.button( "e", "  · New file" , ":ene <BAR> startinsert <CR>"),
-    dashboard.button( "f", "  · Find file", ":cd $HOME/Desktop/Desktop | Telescope find_files<CR>"),
+    dashboard.button( "f", "  · Find file", ":cd $HOME/Personal | Telescope find_files<CR>"),
     dashboard.button( "r", "  · Recent"   , ":Telescope oldfiles<CR>"),
     dashboard.button( "s", "  · Settings" , ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
     dashboard.button( "q", "  · Quit", ":qa<CR>"),
 }
 
 local fortune = require("alpha.fortune")
--- dashboard.section.footer.val = randomElement
 dashboard.section.footer.val = fortune()
 
 -- Send config to alpha

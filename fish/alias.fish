@@ -11,7 +11,9 @@ alias ls "exa --long --header"
 alias tdie "tmux kill-server"
 alias python "python3"
 alias nvim-man displayNvimManPage 
-
+alias pip "pip3"
+alias air "/Users/ahmedsaheed/bin/air"
+alias pilot "gh copilot"
 
 function displayNvimManPage
     if type -q glow

@@ -8,3 +8,6 @@ configstore
 coc
 iterm2
 spotify-tui
+gcloud/
+zed/
+fish/fish_variables
