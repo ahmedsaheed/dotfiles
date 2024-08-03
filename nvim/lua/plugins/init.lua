@@ -24,10 +24,12 @@ return require('packer').startup(function()
     use 'nacro90/numb.nvim'
     use 'mfussenegger/nvim-jdtls'
     use 'glepnir/lspsaga.nvim' -- LSP UIs
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua' -- recommended if need floating window support
+    use 'neovim/nvim-lspconfig'
     -- Themes
 use { "catppuccin/nvim", as = "catppuccin" }
 use {'nyoom-engineering/oxocarbon.nvim'}
-
     use {
         'CRAG666/code_runner.nvim',
         requires = 'nvim-lua/plenary.nvim',
@@ -75,7 +77,7 @@ use {'nyoom-engineering/oxocarbon.nvim'}
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
     use {
-        'nvim-telescope/telescope.nvim',
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { {'nvim-lua/plenary.nvim'} },
         config = function()
             require('telescope').setup{

@@ -24,6 +24,7 @@ local plugins_modules = {
     "plugins.configs.neosolarize",
     "plugins.configs.tokyonight",
     "plugins.configs.lspsaga",
+    "plugins.configs.go",
 }
 
 local colors_modules = {
@@ -37,3 +38,13 @@ load_modules(colors_modules)
 
 -- disable swap file
 vim.o.swapfile = false
+
+
+local format_sync_grp = vim.api.nvim_create_augroup("GoFormat", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.go",
+  callback = function()
+   require('go.format').goimports()
+  end,
+  group = format_sync_grp,
+})

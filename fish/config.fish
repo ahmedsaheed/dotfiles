@@ -6,17 +6,21 @@ set -gx VCPKG_ROOT "$HOME/vcpkg"
 set -gx REACT_EDITOR "WebStorm" 
 neofetch
 
-export REACT_EDITOR=WebStorm
 # pnpm
 set -gx PNPM_HOME "/Users/ahmedsaheed/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
-# pnpm end
-
-# The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/ahmedsaheed/google-cloud-sdk/path.fish.inc' ]; . '/Users/ahmedsaheed/google-cloud-sdk/path.fish.inc'; end
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+if test -d "/opt/homebrew/opt/ruby/bin"
+    set -x PATH /opt/homebrew/opt/ruby/bin $PATH
+    set -x PATH (gem environment gemdir)/bin $PATH
+end
+set -x PATH /Users/ahmedsaheed/.cargo/bin $PATH
+starship init fish | source
+
+
