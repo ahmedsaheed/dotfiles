@@ -16,8 +16,8 @@ alias pip "pip3"
 alias air "/Users/ahmedsaheed/bin/air"
 alias pilot "gh copilot"
 alias cl "clear"
-alias esolang "/Users/ahmedsaheed/Developer/esolang/dist/esolang_darwin_arm64/esolang"
-alias tally "go run /Users/ahmedsaheed/Developer/tally"
+# alias esolang "/Users/ahmedsaheed/Developer/esolang/dist/esolang_darwin_arm64/esolang"
+# alias tally "go run /Users/ahmedsaheed/Developer/tally"
 function displayNvimManPage
     if type -q glow
         glow ~/.config/nvim/readme.md

@@ -1,4 +1,3 @@
- 
  -- set up catppuccino
   require('catppuccin').setup({
       transparent_background = true,

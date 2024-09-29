@@ -11,6 +11,7 @@ local core_modules = {
 local plugins_modules = {
     "plugins",
     "plugins.configs.nvim-tree",
+    "plugins.configs.prettier",
     "plugins.configs.toggleterm",
     "plugins.configs.lualine",
     "plugins.configs.alpha",

@@ -4,7 +4,7 @@ set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 set -gx VCPKG_ROOT "$HOME/vcpkg"
 set -gx REACT_EDITOR "WebStorm" 
-neofetch
+set -gx HOMEBREW_NO_VERIFY_ATTESTATIONS 1
 
 # pnpm
 set -gx PNPM_HOME "/Users/ahmedsaheed/Library/pnpm"
@@ -22,5 +22,5 @@ if test -d "/opt/homebrew/opt/ruby/bin"
 end
 set -x PATH /Users/ahmedsaheed/.cargo/bin $PATH
 starship init fish | source
-
+neofetch
 
