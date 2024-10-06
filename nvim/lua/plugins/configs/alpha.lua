@@ -1,8 +1,5 @@
 local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
-local array = {"hello", "world", "foo", "bar"} -- TODO: Get nice quotes later
-local index = math.random(#array)
-local randomElement = array[index]
 
 -- Set header
 -- dashboard.section.header.val = {

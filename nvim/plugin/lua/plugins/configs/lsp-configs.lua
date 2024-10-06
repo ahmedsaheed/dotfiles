@@ -9,6 +9,7 @@ require'lspconfig'.dockerls.setup{} -- docker-language-server
 require'lspconfig'.tailwindcss.setup{}  -- tailwind-language-server
 require'lspconfig'.rust_analyzer.setup{}
 -- require'lspconfig'.jdtls.setup{} 
+require'lspconfig'.clangd.setup {}
 require'lspconfig'.gopls.setup {
     cmd = {"gopls", "serve"},
     filetypes = {"go", "gomod"},

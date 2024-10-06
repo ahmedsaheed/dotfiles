@@ -1,5 +1,4 @@
 local lsp = vim.lsp
-
 require'lspconfig'.tsserver.setup{} -- typescript-language-server
 require'lspconfig'.cssmodules_ls.setup{} -- css-modules-language-server
 require'lspconfig'.dartls.setup{} -- dart-language-server
@@ -9,6 +8,7 @@ require'lspconfig'.dockerls.setup{} -- docker-language-server
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 -- require'lspconfig'.jdtls.setup{}
+require'lspconfig'.clangd.setup {}
 require'lspconfig'.gopls.setup {
     cmd = {"gopls", "serve"},
     filetypes = {"go", "gomod"},
