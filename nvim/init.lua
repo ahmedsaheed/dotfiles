@@ -49,3 +49,13 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
   group = format_sync_grp,
 })
+
+
+local format_sync_grp_js = vim.api.nvim_create_augroup("PrettierFormat", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.js,*.jsx,*.ts,*.tsx, *.json, *.html, *.css, *.scss, *.md, *.yaml, *.yml",
+  callback = function()
+   require('prettier').format()
+  end,
+  group = format_sync_grp_js,
+})
