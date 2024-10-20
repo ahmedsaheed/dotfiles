@@ -59,3 +59,15 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
   group = format_sync_grp_js,
 })
+
+
+local format_sync_grp_cpp = vim.api.nvim_create_augroup("ClangFormat", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.cpp,*.h",
+  callback = function()
+    --invoke clang-format
+    vim.cmd("%!clang-format")
+
+  end,
+  group = format_sync_grp_cpp,
+})
