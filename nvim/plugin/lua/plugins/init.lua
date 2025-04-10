@@ -1,8 +1,16 @@
+-- -- Automatically install and set up packer.nvim on any machine this config is cloned to
+-- local fn = vim.fn
+-- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+-- if fn.empty(fn.glob(install_path)) > 0 then
+--   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+-- end
+
 -- Automatically install and set up packer.nvim on any machine this config is cloned to
 local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local custom_path = '~/Developer/packer.nvim'  -- Change this to your desired path
+local install_path = fn.expand(custom_path)
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
 local packer = require('packer')
